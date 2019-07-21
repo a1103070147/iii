@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <title>登录页</title>
+        <style type="text/css">
+        body{background:#eff0f4;
+            margin-top: 0%;
+        margin-left: 0%;}
+        .header{display: flex;
+        justify-content: space-between;
+        background:#5fc0cd;
+     width: 100vw;
+     height: 7vh;
+        line-height: 7vh;
+        color: white;
+        font-size:3vh;}
+        .header1{
+            position:absolute;
+            left: 1%;}
+            .header3{
+                position:absolute;
+                right: 1%;
+              }
+                .header2{
+                    position:absolute;
+                    left: 48%;}
+    .user{
+        background: white;}
+    .user img{width:50px;
+        border-color: white;
+        margin-left: 5%;
+        vertical-align: middle;}
+     .user input{outline: none;
+     border-style: solid;
+  border-color: white;
+  border-left-color: teal;
+  padding-left: 1%;
+         width: 50%;
+     height: 3.5vh;
+         vertical-align: middle;
+        }
+        .password{margin-top: 1%;
+            background: white;}
+       .password input{outline:none;
+        border-style: solid;
+        border-color: white;
+   border-left-color: teal;
+        padding-left: 1%;
+      vertical-align: middle;
+       width: 50%;
+       height: 3.5vh;
+      }
+        .password img{
+            width: 50px;
+            margin-left: 5%;
+            vertical-align: middle;}
+            .denglu input{
+                outline: none;
+                border:none;
+                background: #5fc0cd;
+                color: white;
+                width: 100vw;
+                height: 8vh;
+                margin-top: 1%;
+                font-size: 3vh;
+                }
+             a{float: right;
+             color: #5fc0cd;
+             margin-top: 1%;
+             text-decoration: none;}                        
+        </style>
+    </head>
+    <body>
+        <div class="header ">
+        <div class="header1">关闭</div>                  
+        <div class="header2">登录</div>
+        <div class="header3">注册</div>
+        </div>
+        <div class="user">
+            <img src="task4_03.png" alt="账号">
+            <input type="text" placeholder="请输入由11位数字组成的手机号" maxlength="11" 
+            oninput = "value=value.replace(/[^\d]/g,'')" >
+        </div>
+        <div class="password">
+            <img src="task4_06.png" alt="密码">
+            <input type="password" placeholder="请输入密码"">
+        </div>
+        <div class="denglu">
+            <input type="submit" value="登录">
+            </div>
+            <a href="###">忘记密码？</a>
+        
+    </body>
+</html>
