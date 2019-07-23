@@ -33,29 +33,29 @@ background-repeat: no-repeat;
   height: 25vh;
    color: white;
    font-size: 2vh;
+   position: relative;
 }
 .portrait{
-    width: 100px;
-    position: relative;
-        left: 1%;
+   width: 100px;
+    position: absolute;
+        left: 50px;
+        top: 30px;
 }
-.name{position: relative;
-          left: 2%;
-    margin-top: -2%;
+.name{position: absolute;
+          left:160px;
+  top: 70px;
     white-space: nowrap;
 }
 .position{
     display: flex;
     align-items: center;
-    position: relative;
-    top: 20%;
+    position: absolute;
+    left: 160px;
+    top: 100px;
 }
 .jiesao{ font-size: 2vh;}
 .jiesao img {width: 6vh;
 height: 6vh;}
-.jiesao hr {
-    border:1.2px solid rgb(143, 146, 146);
-}
 p{
     border: 3px solid white;
     border-left-color: #5fc0cd;
@@ -131,7 +131,7 @@ font-size: 2vh;}
         </header>
 <main>
     <div class="personal">
-    <img src="task5-1_03.png" alt="portrait" class="portrait">
+    <div><img src="task5-1_03.png" alt="portrait" class="portrait"></div>
     <div class="name">徐士林 55岁</div>
     <div class="position">
     <img src="task5-1_07.png" alt="position">
