@@ -18,15 +18,19 @@ z-index:1}
     justify-content: center;
     align-items: center;
      }
-.guzhu { background: #55a8b3;
+.guzhu { background: white;
 height: 5vh;
 font-size: 3vh;
 white-space: nowrap;
 outline: none;
-color: white;
+color: #55a8b3;
 border: 1px solid #5fc0cd;
 border-radius: 12px;
+z-index: 1;
 }
+.guzhu:hover { background-color: rgba(17, 60, 61, 0.774);}
+.hugong:hover{ background-color: rgba(17, 60, 61, 0.774);}
+.dingwei:hover { background-color: rgba(17, 60, 61, 0.774);}
 .hugong { background: white;
 height: 5vh;
 font-size: 3vh;
@@ -35,16 +39,18 @@ outline: none;
 color: #5fc0cd;
 border: 1px solid #5fc0cd;
 border-radius: 12px;
+z-index: 1;
 }
 .dingwei {   width: 50px;
             height: 50px;
            outline: none;
            position: absolute;
-           right: 2%;}     
+           right: 2%;
+border: 1px solid #5fc0cd;
+border-radius: 12px;}     
 .xuanxiang {display: flex;
     justify-content: space-between;
     height: 6vh;
-    text-align: center;
 text-align-last: center;
 }
 .diqu {font-size: 3vh;
@@ -54,83 +60,98 @@ flex-grow: 1;
 flex-grow: 1;}  
 .shengti {font-size: 3vh;
 flex-grow: 1;}   
-ul{ list-style: none;
-width: 100%;
-position: relative;
-}
-ul h4{color: #b3b3b3;}
-li{ display: block;
-   height: 50px;
-   text-align: left;
-   line-height: 50px;}
-.riqi {float:left;
-    background: url(xuebi.png);
-background-repeat: no-repeat;
-background-position: -36px -0px;
-width: 40px;
-height: 40px;}
-.qian{ color: red;
-position: absolute;
-left:63%;
-top:33%;}
-.jing{ background: url(xuebi.png);
-    background-repeat: no-repeat;
-    display: block;
-    float: right;
-    width: 30px;
-    height: 33px;
-    background-position: -18px -8px;
-    position: relative;
-    left: 20%;
-    top:13%;}
-.didian {float:left;
-background: url(xuebi.png);
-background-repeat: no-repeat;
-width: 30px;
-height: 33px;
-background-position: -1px -53px;}
-.qixian { position: relative;
-           left: 5%;}
-main{margin-top: 110px;
+.hang { list-style: none;
+margin: 0%;
+padding-left:2%;
+margin-right: 15%;
 overflow: hidden;
-text-overflow:ellipsis;
-white-space: nowrap;}
+white-space: nowrap;
+text-overflow: ellipsis;
+}
+.hang h4 { color: #b3b3b3;}
+.riqi { display: block;
+    width: 49px;
+    height: 49px;
+    background: url(xuebi.png);
+    background-position: -36px -0px;}
+.rili { display: flex;
+justify-content: flex-start;
+align-items: center;}
+.kazheng { display: flex;
+justify-content: flex-start;
+align-items: center;}
+.one { display: flex;
+     justify-content: space-between;
+     margin-left: 3.5%;
+     line-height: 33px;
+}
+.qian { color: rgb(255, 8, 49);
+        font-weight: 600;
+        margin-left: 2%;
+        }
+.didian { display: block;
+    width: 49px;
+    height: 43px;
+    background: url(xuebi.png);
+    background-position: -1px -53px;}
+.jing { display: block;
+    width: 18px;
+    height: 33px;
+    background: url(xuebi.png);
+    background-position: -18px -8px;}
+
 footer {position: fixed;
           bottom: 0%;
            width: 100%;
-          height: 120px;
+          height: 100px;
           background-color:#f8fafb;
          display: flex;
          justify-content: space-around;
          line-height: 120px;}
-footer button {vertical-align :middle;}
+footer button {vertical-align :top;}
 .zhuye {  width: 59px;
     height: 60px;
     background: url(xuebi.png);
     background-position: -50px -56px;
     outline: none;
-     border: none;}
+    border: 1px solid #f8fafb;
+    border-radius: 20px;}
 .fankui {  width: 104px;
     height: 96px;
     background: url(xuebi.png);
     background-position: -141px -20px;
     outline: none;
-    border: none;}
+    border: 1px solid #f8fafb;
+    border-radius: 20px;}
 .wode { width: 56px;
     height: 56px;
     background: url(xuebi.png);
-    background-position: -88px 1px;
+    background-position: -87px 1px;
     outline: none;
-    border: none;}
+    border: 1px solid #f8fafb;
+    border-radius: 20px;}
 .shouye { position: relative;
-         top: 35px;
+         top: 9px;
          left: -50px;
-         color: #5fc0cd;}
+         color: #5fc0cd;
+         font-weight: 600;}
 .wo {position: relative;
-         top: 35px;
+         top: 9px;
          left: -50px;
-         color: #5fc0cd;}
-
+         color: #5fc0cd;
+         font-weight: 600;}
+.dibu { height: 120px;}
+.dingbu { height: 15vh;}
+h4,
+.qian,
+.qixian { overflow: hidden;
+white-space: nowrap;
+text-overflow: ellipsis;}
+.qixian { color: rgba(1, 10, 14, 0.993);
+font-weight: 600;}
+.zhuye:hover {background-color: rgba(17, 60, 61, 0.774);}
+.fankui:hover {background-color: rgba(0, 0, 0, 0.774);}
+.wode:hover {background-color:rgba(17, 60, 61, 0.774);}
 </style>
 </head>
 <body>
@@ -142,73 +163,88 @@ footer button {vertical-align :middle;}
 </div>
 <div class="xuanxiang">
 <select class="diqu">
-    <option>所在地</option>
     <option>虎丘</option>
     <option>通州</option>
     <option>苏州</option>
+    <option selected>所在地</option>
 </select>
 <select class="shishu">
-    <option>食宿</option>
     <option>包吃</option>
     <option>包住</option>
     <option>包吃住</option>
     <option>不包吃住</option>
+    <option selected>食宿</option>
 </select>
 <select class="shengti">
-    <option>病人情况</option>
     <option>老</option>
     <option>弱</option>
     <option>病</option>
     <option>残</option>
+    <option selected>病人情况</option>
 </select>
 </div>
 </header>
+<div class="dingbu">
+</div>
 <main>
-    <div class="one">
-    <ul>
-        <li><i class="riqi"></i><h4>服务日期</h4></li>
-        <li class="qixian">2015-7-5至2015-8-5</li>
-        <li class="qian">25元/小时<i class="jing"></i></li>
-        <li><i class="didian"></i><h4>北京·通州·果园</h4></li>
-    </ul>
+    
+    <div class="hang">
+        <div class="rili"><i class="riqi"></i><h4>服务日期</h4></div>
+        <div class="one">
+        <div class="qixian">2015-7-5至2015-8-5</div>
+        <div class="qian">25元/小时</div>
+            <i class="jing"></i>
     </div>
+        <div class="kazheng"><i class="didian"></i><h4>北京·通州·果园</h4></div>
+    </div>
+   
     <hr>
-    <div class="tow">
-        <ul>
-        <li><i class="riqi"></i><h4>服务日期</h4></li>
-        <li class="qixian">2015-7-5至2015-8-5</li>
-        <li class="qian">35元/小时<i class="jing"></i></li>
-        <li><i class="didian"></i><h4>北京·通州·果园</h4></li>
-        </ul>     
-    </div>
+    <div class="hang">
+            <div class="rili"><i class="riqi"></i><h4>服务日期</h4></div>
+            <div class="one">
+            <div class="qixian">2015-7-5至2015-8-5</div>
+            <div class="qian">25元/小时</div>
+                <i class="jing"></i>
+        </div>
+            <div class="kazheng"><i class="didian"></i><h4>北京·通州·果园</h4></div>
+        </div>
+      
+  
     <hr>
-    <div class="three">
-        <ul>
-        <li><i class="riqi"></i><h4>服务日期</h4></li>
-        <li class="qixian">2015-7-5至2015-8-5</li>
-        <li class="qian">45元/小时<i class="jing"></i></li>
-        <li><i class="didian"></i><h4>北京·通州·果园</h4></li>
-        </ul>       
-    </div>
+    <div class="hang">
+            <div class="rili"><i class="riqi"></i><h4>服务日期</h4></div>
+            <div class="one">
+            <div class="qixian">2015-7-5至2015-8-5</div>
+            <div class="qian">25元/小时</div>
+                <i class="jing"></i>
+        </div>
+            <div class="kazheng"><i class="didian"></i><h4>北京·通州·果园</h4></div>
+        </div>      
     <hr>
-    <div class="four">
- <ul>
-        <li><i class="riqi"></i><h4>服务日期</h4></li>
-        <li class="qixian">2015-7-5至2015-8-5</li>
-        <li class="qian">55元/小时<i class="jing"></i></li>
-        <li><i class="didian"></i><h4>北京·通州·果园</h4></li>
-        </ul>       
-    </div>
+    <div class="hang">
+            <div class="rili"><i class="riqi"></i><h4>服务日期</h4></div>
+            <div class="one">
+            <div class="qixian">2015-7-5至2015-8-5</div>
+            <div class="qian">25元/小时</div>
+                <i class="jing"></i>
+        </div>
+            <div class="kazheng"><i class="didian"></i><h4>北京·通州·果园</h4></div>
+        </div>
     <hr>
-    <div class="five">
-      <ul>
-        <li><i class="riqi"></i><h4>服务日期</h4></li>
-        <li class="qixian">2015-7-5至2015-8-5</li>
-        <li class="qian">65元/小时<i class="jing"></i></li>
-        <li><i class="didian"></i><h4>北京·通州·果园</h4></li>
-        </ul>         
-    </div>
+    <div class="hang">
+            <div class="rili"><i class="riqi"></i><h4>服务日期</h4></div>
+            <div class="one">
+            <div class="qixian">2015-7-5至2015-8-5</div>
+            <div class="qian">25元/小时</div>
+                <i class="jing"></i>
+        </div>
+            <div class="kazheng"><i class="didian"></i><h4>北京·通州·果园</h4></div>
+        </div>   
+    
+  
 </main>
+<div class="dibu">
+</div>
 <footer>
     <div><button class="zhuye"></button>
         <span class="shouye">首页</span>
